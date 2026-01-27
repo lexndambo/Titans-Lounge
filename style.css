@@ -1,0 +1,712 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(28,42,58,0.5), rgba(28,42,58,0.5)), url("./Public/images/head2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative
+}
+.logo{
+    width: 150px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-size: 1.3rem;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-right: 40px;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-family: "Bodoni Moda", serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #A58441;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.heading{
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 90%;
+}
+h1 span{
+    font-size: 4rem;
+    color: #A58441;
+}
+.btn{
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px 10px;
+    color: white;
+    background-color: transparent;
+      
+}
+.btn:hover{
+    background-color: #A58441;
+    transition: 0.5s;
+}
+.title{
+    margin-bottom: 30px;
+}
+nav .fa{
+    display: none;
+}
+
+/*---------About-------*/
+
+.us{
+    background-color: #1C2A3A;
+    text-align: center;
+    padding:50px;
+    color: #A58441;
+}
+.about{
+     display: flex;
+     padding:5px;
+     position: relative;
+     background-color: #1C2A3A;
+     height: 400px;
+}
+.about-img{
+    width: 500px;
+}
+.about-imgb{
+    position: absolute;
+    width:350px;
+    left:200px;
+    top: 150px;
+}
+.about p{
+    margin-left: 100px;
+    font-size: 1.3rem;
+    color: white;
+}
+button{
+    margin-top: 70px;
+    float: right;
+    margin-right: 30px;
+    background-color:#A58441;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 8px;
+    border: none;
+    cursor:pointer;
+}
+
+/*-----------SERVICES--------------*/
+
+.our{
+    margin-bottom: 30px;
+}  
+.our h2{
+    text-align: center;
+    margin-top:30px;
+    color:#A58441;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    padding-top:10px;
+    margin: 0 15px;
+}
+.services img{
+    width:350px;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.services h3{
+    margin: 10px 0;
+    color: #A58441;
+}
+.services div{
+    margin: 20px 10px;
+    box-shadow: 1px 1px 15px -10px #1C2A3A;
+    justify-content: center;
+    text-align:center;
+    border-radius:15px;
+    padding-bottom:20px;
+}
+.services i{
+    color: #A58441;
+    font-size: 2rem;
+    margin-bottom:30px; 
+}
+.services p{
+    margin:0 10px;
+}
+
+/*------------Time of your life---------*/
+
+.features-sect{
+    margin-bottom: 50px;
+}
+.features-sect>div>h3{
+    color:#A58441;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.8rem
+}
+.features{
+    background-color:#1C2A3A;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left:30px;
+}
+.features-quote{
+    font-size: 3rem;
+    background-image:linear-gradient(rgba(28,42,58,0.5), rgba(28,42,58,0.9)), url("./Public/images/about.jpg");
+    background-position: center;
+}
+.features-quote h2{
+    color:white;
+    margin-top:100px
+}
+.features>div>h3{
+    color:#A58441;
+    margin-top: 40px;
+    font-size: 1.8rem;
+}
+.feat{
+    display: flex;
+}
+.feat>div{
+    margin:0 0 0 50px;
+}
+.feat li{
+    color: white;
+    margin:30px 0;
+    font-size:1.2rem;
+    list-style:circle;
+}
+.feat span{
+    color:#6D1B;
+}
+.features div .icons{
+    display:flex;
+}
+.icons i{
+    color:#A58441;
+    font-size:3rem;
+    margin:20px;
+}
+.icons p{
+    color:white;
+    font-size:1.2rem;
+}
+.features div .icons div{
+    margin: 0 10px;
+}
+
+/*------------REVIEWS----------*/
+
+.reviews-sec h2{
+    text-align:center;
+    color:#A58441;
+    padding-bottom:20px;
+    font-size:1.8rem;
+}
+.reviews{
+    display: flex;
+    gap: 10px;
+    justify-content:space-around;
+}
+.review {
+    width:400px;
+    height:250px;
+    padding:20px;
+} 
+.star-rating{
+    color:#A58441;
+}
+.pic{
+    width: 50px;
+    height:50px;
+    border: solid #A58441;
+    border-radius: 50%;
+}
+.fa-quote-left{
+    text-align:right;
+    color:#A58441;
+    padding: 10px;
+}
+.verticle-line{
+    width: 2px;
+    height: 300px;
+    background-color: #A58441;
+    margin-top: 10px;
+}
+
+/*----------Footer---------------*/
+
+.footerbig{
+    height: 340px;
+     background-color: #1C2A3A;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+}
+.footer h4{
+    color: #A58441;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+.footer p{
+    color: white;
+    margin-top:10px;
+}
+.flogo{
+    width:300px;
+}
+.footer li{
+    display:block;
+    color:white;
+    font-size: 0.9rem;
+}
+.footer ul{
+    margin-top:30px;
+}
+.footer h5{
+    color: #A58441;
+    font-size: 1.2rem;
+}
+.socials{
+    color: white;
+    margin:35px 0px;
+}
+.quote{
+    color:white;
+    text-align:center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.footer h5{
+    margin-bottom: 10px;
+}
+
+/*------------About Page-----------*/
+.team{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:50px;
+}
+.team img{
+    width:200px;
+    border-radius:500px;
+}
+.iteam{
+    background-color: #1C2A3A30;
+    border-radius: 50px;
+    padding-top: 20px;
+    width:300px;
+    text-align: center;
+    height: 300px
+}
+.iteam h3{
+    font-size: 1.5rem;
+    margin-top:10px;
+}
+
+/*---------Services Page-----------*/
+.lounge{
+    padding: 30px 50px 50px 50px;
+    display: flex;
+    gap:10px;
+    background-color: #1C2A3A;
+}
+ .lounge div{
+    width: 50%;
+ }
+ .serv-page h2{
+    text-align: center;
+    color: #A58441;
+    background-color:#1C2A3A;
+    padding-top: 50px;
+ }
+.lounge .pics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+.lounge p{
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color:white;
+}
+.pic1{
+    grid-column: span 2;
+    width: 100%;
+}
+.pics img{
+    height: 200px;
+}
+
+/*------------Conference Hall------*/
+.conferenceh{
+    background-color:#1C2A3A;
+    padding: 50px;
+}
+.conferenceh h2{
+    text-align: center;
+    color:#A58441;
+    margin-bottom: 20px;
+}
+.conferencehh{
+    Display: flex;
+    margin-top: 40px;
+}
+.conferencehh div{
+    width:50%;
+}
+.conferencehh img{
+    width: 550px;
+}
+.conferencehh p{
+    font-size: 1.3rem;
+    color: white;
+}
+/*------------Restaurant------------*/
+.restaurant{
+    margin:50px 50px 20px 50px;
+}
+.restaurant > h2{
+    color:#A58441;
+    text-align: center;
+    margin-bottom:30px;
+}
+.rpic{
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+.rpic img{
+    width: 80%;
+}
+.rvalues1>h3{
+    text-align: center;
+    margin: 40px;
+    color:#A58441;
+}
+.rvalues1{
+    background-color:#1C2A3A;
+    padding: 180px 0 50px 0;
+    position:relative;
+    top: -180px;
+    z-index: -1;
+}
+.rvalues{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.fa-bowl-food{
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color:white;
+}
+.rvalues h3{
+    margin-bottom: 10px;
+    color:#A58441;
+}
+.rvalues p{
+    color: white;
+}
+
+/*---------Contact Us------*/
+.location{
+    width:80%;
+    margin: auto;
+    padding: 50px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.form h2{
+    margin: 10px;
+}
+/*-------Form----------*/
+
+.ourinfo{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color:#1C2A3A30;
+    padding: 40px;
+}
+.oinfor{
+    display:flex;
+    margin:30px;
+    font-size: 1.3rem;
+}
+.form input, .form textarea{
+    display: block;
+    width : 80%;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.ourinfo div{
+    flex: 1;
+}
+.formbtn{
+    float: left;
+    margin-top:-5px;
+}
+.oinfor i{
+    color:#A58441;
+    margin-right:10px;
+    }
+
+@media screen and (max-width:800px){
+    body{
+        overflow-x:hidden;
+    }
+    .header{
+    height: 60vh;
+    }
+    h1 span{
+        font-size:2rem;
+    }
+    h1{
+        font-size: 20px
+    }
+    .btn{
+        padding: 2px 5px;
+        font-size: 15px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        height:100vh;
+        top: 0;
+        width: 200px;
+        z-index: 2;
+        background-color: #A58441;
+        right:-200px;
+        text-align: left;
+        margin-right:0px;
+        transition:0.2S;
+    }
+    nav .fa{
+        margin:10px;
+        display: block;
+        color:white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    nav ul{
+        padding:30px;
+    }
+
+    /*------About Us------*/
+
+    .about{
+        display:block;
+        width:100%;
+        padding-bottom:80px;
+        padding: 0 0 100px 0;
+    }
+    .us{
+        padding: 30px
+    }
+    .about-img{
+        display:block;
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .about-imgb{
+     display: none;
+    }
+    .about p{
+        text-align:justify;
+        margin: 20px 40px;
+        font-size: 0.9rem;
+    }
+    .about button{
+        margin:0px 40px;
+        padding: 5px 10px;
+        font-size:0.7rem;
+        cursor: pointer;
+    }
+
+    /*-----------SERVICE--------------*/
+
+    .our{
+        width: 100%;
+    }
+    .services{
+        display: block;
+    }
+    .services img{
+        width:90%;
+    }
+
+    /*---------TIME OF YOUR LIFE------*/
+
+    .features-sect>div>h3{
+        margin-top:60px;
+        margin-bottom:10px;
+    }
+    .features{
+        display: block;
+        padding:0;
+    }
+    .features h3{
+        padding-top:10px;
+        text-align: center;
+    }
+    .feat>div{
+        margin:0 10px 0 30px;
+    }
+    .features>div>h3{
+        margin-top:5px;
+    }
+    .features-quote h2{
+        margin-top:50px;
+    }
+    .feat li{
+        font-size:1rem;
+    }
+    .icons p{
+        font-size:1rem;
+    }
+    .icons i{
+        font-size: irem;
+    }
+    .features-quote{
+    font-size: 2rem;
+    padding:20px;
+    }
+    /*----------Reviews-----------*/
+
+    .review{
+        width:95%;
+        padding: 20px 0px 20px 20px;
+    }
+    .reviews{
+        display: block;
+    }
+    .review2{
+        margin-top: -60px;
+    }
+    .verticle-line{
+        display: none;
+    }
+
+    /*---------------Footer------------*/
+
+    .footerbig{
+        height:710px;
+        padding-top:5px;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .footer ul{
+        margin-top: 10px;
+    }
+
+    /*---------About Page------------*/
+  
+    .team{
+        display: block;
+    }
+    .iteam{
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:5px;
+    }
+
+    /*-------------Services page-----------*/
+
+    .lounge{
+        display: block;
+        padding: 20px;
+    }
+    .lounge div{
+        width: 100%;
+    }
+  .lounge .pics{
+    display: block;
+  }
+  .pic2{
+    display: none;
+  }
+
+  /*-----------Conference Hall---------*/
+  .conferenceh{
+    padding:20px;
+  }
+  .conferencehh{
+    display: block;
+  }
+  .conferencehh div{
+    width: 100%;
+  }
+  .conferencehh img{
+    width: 100%;
+  }
+  .conferencehh p{
+    margin-top:10px;
+  }
+  
+  /*--------------restaurant-----------*/
+  .lounge p,.conferencehh p{
+    text-align:justify;
+  }
+  .restaurant{
+    margin: 20px;
+  }
+  .restaurant > h2{
+    font-size:1.3rem;
+    margin-bottom:50px;
+    margin-top:40px;
+  }
+  .restaurant h3{
+    font-size: 1rem;
+  }
+
+  /*-------------contact us page------------*/
+  .ourinfo{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

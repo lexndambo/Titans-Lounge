@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/efa96cfc64.js" crossorigin="anonymous"></script>
+        <style>
+            .header{
+            background-image: linear-gradient(rgba(28,42,58,0.5), rgba(28,42,58,0.5)), url("./Public/images/restaurant.jpg");
+            }
+            .we-are{
+                padding: 50px 20px;
+                text-align: center;
+                color: #010101;
+            }
+            .we-are h2{
+                padding: 20px;
+                color: #A58441;
+            }
+            .we-are p{
+                font-size: 1.3rem;
+            }
+            .ourteam h2{
+                color: #A58441;
+                text-align: center;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body>
+ <section class="header">
+        <nav>
+            <a href="index.html"><img src="./Public/images/logo.png" class="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li><a href="about b.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="heading">
+            <h1 class="title"><span>ABOUT US</span></h1>
+            <a href="about b.html" class="btn">Learn more</a>
+        </div>
+        </section>
+
+         <!---------About Us------>
+
+        <section class="we-are">
+            <div>
+                <h2>WHO WE ARE</h2>
+                <P>Born in the heart of Kenya, Titans Lounge was created for those who live boldly, dream fearlessly, and appreciate the finer details in life. It’s more than a place—it’s an experience that celebrates strength, elegance, and connection.
+
+Inspired by the spirit of the “Titan”—a symbol of power, excellence, and legacy—Titans Lounge was founded on the belief that greatness isn’t just achieved; it’s lived. Every corner, color, and sound within our space reflects a perfect balance between luxury and authenticity, creating an environment where ambition meets relaxation.
+
+At Titans Lounge, we fuse Kenya’s vibrant cultural essence with a modern, world-class atmosphere. Whether it’s an afternoon meet-up, a private celebration, or a quiet evening unwind, our space offers a refined escape designed for people who appreciate sophistication without losing touch with their roots.
+
+Driven by passion and crafted with intention, Titans Lounge stands as a symbol of elevated Kenyan hospitality—a place where every visit feels personal, every detail tells a story, and every guest is part of something extraordinary.
+
+<br><br>Welcome to Titans Lounge — Where Prestige Lives</P>
+            </div>
+        </section>
+
+        <!------------OUR TEAM-------->
+        <section class="ourteam">
+            <h2>OUR TEAM</h2>
+            <div class="team">
+                <div class="iteam"><img src="./Public/images/CEO1.png">
+                <h3>C.E.O : James Osore</h3>
+            </div>
+                <div class="iteam"><img src="./Public/images/1MD.png">
+                <h3>M.D : Mariam Baha</h3>
+            </div>
+                <div class="iteam"><img src="./Public/images/HR1.png">
+                <h3>H.R : Kyle Tribiani</h3>
+            </div>
+            </div>
+        </section>
+
+         <!-----------FOOTER-------->
+        
+        <section class="footerbig">
+            <div class="footer">
+            <div>
+                <h4>About Us</h4>
+                <ul>
+                <li><i class="fa-solid fa-location-dot"></i> 215 woodland avn, Kenya</li>
+                <li><i class="fa-solid fa-clock"></i> 24hr Service</li>
+                <li><i class="fa-solid fa-phone"></i> (769)5328595</li>
+                </ul>
+                <div class="socials">
+                <h5>Contact Us:</h5>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>CONTACTS</li>
+                </ul>
+            </div>
+            <div>
+                <img src="./Public/images/logo.png" class="flogo">
+            </div>
+            </div>
+            <hr>
+            <p class="quote"><em>© 2025 Created by Pixel Intelligent</em></p>
+        </section>
+
+        <!----------Javascript toggle menu----->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showmenu(){
+                navlinks.style.right ="0";
+            }
+            function hidemenu(){
+                navlinks.style.right ="-200px";
+            }
+        </script>
+    </body>

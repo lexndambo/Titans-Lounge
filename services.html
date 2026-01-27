@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/efa96cfc64.js" crossorigin="anonymous"></script>
+        <style>
+            .header{
+                background-image : linear-gradient(rgba(28,42,58,0.4), rgba(28,42,58,0.4)), url("./Public/images/lounge.png");
+            }
+        </style>
+    </head>
+    <body>
+        <section class="header">
+        <nav>
+            <a href="index.html"><img src="./Public/images/logo.png" class="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li><a href="about b.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="heading">
+            <h1 class="title"><span>SERVICES</span></h1>
+            <a href="about.html" class="btn">Learn more</a>
+        </div>
+        </section>
+
+        <!----------Lounge--------->
+        <section class="serv-page">
+            <h2>LOUNGE & SPA</h2>
+            <div class="lounge">
+            <div>
+                <P>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</P>
+            </div>
+            <div class="pics">
+                <img src="./Public/images/spa1.png" class="pic1">
+                <img src="./Public/images/spa3.png" class="pic2">
+                <img src="./Public/images/spa2.png" class="pic2">
+            </div>
+            </div>
+        </section>
+        
+        <!---------Conference Hall------>
+        <section class="conferenceh">
+            <h2>CONFERENCE HALL</h2>
+            <div class="conferencehh">
+                <div>
+                    <img src="./Public/images/conference2.jpg">
+                </div>
+                <div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div>
+            </div>
+        </section>
+
+        <!------------Restaurant----------->
+        <section class="restaurant">
+             <h2>RESTAURANT</h2>
+            <div class="rpic">
+                <img src="./Public/images/food1.jpeg">
+            </div>
+            <div class="rvalues1">
+                <h3>OUR RESTAURANT VALUES</h3>
+                <div class="rvalues">
+                    <div>
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <h3>Excellence</h3>
+                        <p>unforgetable culnery<br>expirience</p>
+                    </div>
+                    <div class="verticle-line" style="height:150px"></div>
+                    <div>
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <h3>Innovation</h3>
+                        <p>Dynamic, fresh<br>exciting flavors</p>
+                    </div>
+                    <div class="verticle-line" style="height:150px"></div>
+                    <div>
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <h3>Quality</h3>
+                        <p>Source to plate<br>culnery delight</p>
+                    </div>
+                    <div class="verticle-line" style="height:150px"></div>
+                    <div>
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <h3>Sustainability</h3>
+                        <p>Eco-friendly<br>dinning practices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-----------FOOTER-------->
+        <section class="footerbig" style="margin-top: -130px">
+            <div class="footer">
+            <div>
+                <h4>About Us</h4>
+                <ul>
+                <li><i class="fa-solid fa-location-dot"></i> 215 woodland avn, Kenya</li>
+                <li><i class="fa-solid fa-clock"></i> 24hr Service</li>
+                <li><i class="fa-solid fa-phone"></i> (769)5328595</li>
+                </ul>
+                <div class="socials">
+                <h5>Contact Us:</h5>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>CONTACTS</li>
+                </ul>
+            </div>
+            <div>
+                <img src="./Public/images/logo.png" class="flogo">
+            </div>
+            </div>
+            <hr>
+            <p class="quote"><em>© 2025 Created by Pixel Intelligent<em></em></p>
+        </section>
+
+         <!----------Javascript toggle menu----->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showmenu(){
+                navlinks.style.right ="0";
+            }
+            function hidemenu(){
+                navlinks.style.right ="-200px";
+            }
+        </script>
+    </body>
+</html>
